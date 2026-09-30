@@ -1,0 +1,42 @@
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+h2:first-of-type {
+    color: red;
+}
+h1:first-of-type, 
+h2:first-of-type {
+    text-align: center;
+}
+
+}
+body {
+    font-family:sans-serif;
+    background: rgb(129, 64, 159);
+    color:white;
+}
+li {
+    font-size: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+li:hover {
+    transform: translateX(12px);
+    animation: colorShift 2s infinite linear;
+}
+@keyframes colorShift {
+    0% {
+        color: #ff007f;
+    }
+    33% {
+        color: #7928ca;
+    }
+    66% {
+        color: #00dfd8;
+    }
+    100% {
+        color: #ff007f;
+    }
+}
