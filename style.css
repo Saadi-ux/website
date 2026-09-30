@@ -60,11 +60,31 @@ h1 {
 }
 section {
     display: flex;
-    overflow: hidden;         /* Hides images as soon as they exit the container boundary */
-    width: 100%;             /* Sets the sliding viewport area width */
+    overflow: hidden;         
+    width: 100%;             
     max-width: 600px;
     margin: 20px auto;
-    border-radius: 10px;      /* Matches your smooth edge aesthetic */
+    border-radius: 10px;     
     border: 1px solid #333;
     background-color: #111;
+}
+section {
+  display: flex;
+  overflow: hidden;            
+  width: 100%;
+}
+
+section img {
+  width: 150px;                 
+  flex-shrink: 0;              
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
 }
