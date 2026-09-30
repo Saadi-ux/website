@@ -23,6 +23,7 @@ body {
     font-family:sans-serif;
     background: rgb(129, 64, 159);
     color:white;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/012/105/210/original/abstract-technology-futuristic-digital-square-pattern-with-lighting-glowing-particles-square-elements-on-dark-purple-background-free-vector.jpg);
 }
 li {
     font-size: 25px;
@@ -65,14 +66,10 @@ section {
     max-width: 600px;
     margin: 20px auto;
     border-radius: 10px;     
-    border: 1px solid #333;
-    background-color: #111;
+    background: none;
+    gap: 15px;
 }
-section {
-  display: flex;
-  overflow: hidden;            
-  width: 100%;
-}
+
 
 section img {
   width: 150px;                 
