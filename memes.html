@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Brainrotdex - Memes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="memes.css">
+
+</head>
+
+<body>
+
+    <h1>
+        Memedex
+    </h1>
+
+    <p>
+        Welcome to the MemeDex.
+        Here you will find some of the memes that have taken over
+        the internet in recent years.
+    </p>
+
+    <section class="meme">
+
+        <img src="https://chill-guy-meme.com/assets/chill-guy.webp"
+             alt="Chill Guy meme">
+
+        <div class="meme-info">
+
+            <h3>
+                Chill Guy
+            </h3>
+
+            <p>
+                He is just a chill guy(lit me btw).
+                Its crazy how something so simple can become such a huge meme.
+            </p>
+
+            <p>
+                <b>Year:</b> 2024
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="meme">
+
+        <img src="https://th.bing.com/th/id/OIP.hhRowhSy3Ak8jM4gHWROYgHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+             alt="Tralalero Tralala">
+
+        <div class="meme-info">
+
+            <h3>
+                Tralalero Tralala
+            </h3>
+
+            <p>
+                A shark wearing sneakers.
+                Completely stupid idea but it works.
+            </p>
+
+            <p>
+                <b>Year:</b> 2025
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="meme">
+
+        <img src="https://www.bing.com/th/id/OIP.VN33P_e06c0HjVNkrxHQbQHaDt?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+             alt="Tung Tung Tung Sahur">
+
+        <div class="meme-info">
+
+            <h3>
+                Tung Tung Tung Sahur
+            </h3>
+
+            <p>
+                NOW THIS IS PEAK COMEDY. WE MIGHT HATE AI BUT THEY CANT MAKE US HATE OUR BELOVED TTT
+            </p>
+
+            <p>
+                <b>Year:</b> 2025
+            </p>
+        </div>     
+    </section>    
+    <section class="meme">
+
+        <img src="https://s.yimg.com/ny/api/res/1.2/GoQsL9_uB9gJY.jkE7FLbg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https%3A/media.zenfs.com/es/enstarz_latino_398/1fb9e4a950164f5662e81bc9272aa3cc"
+             alt="Six Seven meme">
+
+        <div class="meme-info">
+
+            <h3>
+                Six Seven
+            </h3>
+
+            <p>
+                Six... seven.
+                (Dont ask me... Even i dont know what that means )
+            </p>
+
+            <p>
+                <b>Year:</b> 2025
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="meme">
+
+        <img src="https://tse3.mm.bing.net/th/id/OIP.SmGz2xhpCrdPEl-9etmVtgHaHa?r=0&pid=ImgDet&w=178&h=178&c=7&dpr=1.5&o=7&rm=3"
+             alt="Chicken Jockey meme">
+
+        <div class="meme-info">
+
+            <h3>
+                Chicken Jockey
+            </h3>
+
+            <p>
+                CHICKEN JOCKEYYYY
+                (The minecraft movie was peak)
+            </p>
+
+            <p>
+                <b>Year:</b> 2025
+            </p>
+
+        </div>
+
+    </section>
+
+    <h1>
+        BEST ONGOING MEME 2026
+    </h1>
+   <section class="lantern">
+        <img id="memeImage"
+             src="LANTERN-1.jpg"
+             alt="Thoughts about lantern meme"
+             onclick="changeMeme()">
+
+        <p id="memeText">
+            Thoughts about lantern? (2026)
+        </p>
+
+        <p>
+            Click the image to see another variation!
+        </p>
+
+    </section>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="slangs.html">Slangs</a>
+        </li>
+
+    </ul>
+
+
+    <script>
+
+        const memes = [
+
+            {
+                image: "https://variety.com/wp-content/uploads/2025/02/Lanterns.jpg?w=1000&h=667&crop=1&resize=910%2C607",
+                text: "Thoughts about lantern? (2026)"
+            },
+
+            {
+                image: "LANTERN-2.jpg",
+                text: "Thoughts about lantern? (2026) - Variation 2"
+            },
+
+            {
+                image: "LANTERN-3.jpg",
+                text: "Thoughts about lantern? (2026) - Variation 3"
+            },
+
+            {
+                image: "LANTERN-4.jpg",
+                text: "Thoughts about lantern? (2026) - Variation 4"
+            }
+
+        ];
+
+
+        let currentMeme = 0;
+
+
+        function changeMeme() {
+
+            currentMeme++;
+
+            if (currentMeme >= memes.length) {
+
+                currentMeme = 0;
+
+            }
+
+
+            document.getElementById("memeImage").src =
+                memes[currentMeme].image;
+
+
+            document.getElementById("memeText").textContent =
+                memes[currentMeme].text;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
