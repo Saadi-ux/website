@@ -85,4 +85,15 @@ section img {
     transform: translateX(-50%); 
   }
 }
-.p
+footer {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    text-align: right;
+    font-size: 14px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    font-family: "Bangers", cursive;
+}
