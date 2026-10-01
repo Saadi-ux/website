@@ -5,7 +5,7 @@ img {
 h2:first-of-type {
     color: red;
 }
-p1:first-of-type{
+p:first-of-type{
     text-align: center;
 }
 h1:first-of-type, 
@@ -13,7 +13,7 @@ h2:first-of-type {
     text-align: center;
 }
 h3:first-of-type {
-    font-size 18;
+    font-size : 18;
 }
 a {
     color: inherit;
@@ -85,3 +85,4 @@ section img {
     transform: translateX(-50%); 
   }
 }
+.p

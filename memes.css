@@ -2,6 +2,41 @@
     animation: none;
 }
 
+.lantern {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background: none;
+    border-radius: 12px;
+}
+
 .lantern img {
+    width: 400px;
+    max-width: 100%;
+    cursor: pointer;
     animation: none;
+}
+
+#memeText {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.rainbow-text {
+    font-weight: bold;
+    animation: colorShift 2s infinite linear;
+}
+@keyframes colorShift {
+    0% { color: #ff007f; }
+    33% { color: #7928ca; }
+    66% { color: #00dfd8; }
+    100% { color: #ff007f; }
+}
+p:first-of-type
+{
+    align-items: center;
 }
